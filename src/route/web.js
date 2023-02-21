@@ -8,6 +8,7 @@ let initWebRouter = (app) =>{
     router.get('/', homecontrollre.getAboutPage);
     router.get('/crud', homecontrollre.getCRUD);
     router.post('/post-crud', homecontrollre.postCRUD);
+    router.get('/get-crud',homecontrollre.displayCRUD);
     router.get('/hieudanit',(req,res) =>{
         return res.send('hello to nodejs class')
     });
